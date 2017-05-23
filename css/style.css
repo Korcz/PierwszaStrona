@@ -1,0 +1,84 @@
+/*gwiazdka oznacza ze te ustawienia sa dla kazdego komponentu w pliku*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*The width and height properties (and min/max properties) includes content,
+    padding and border, but not the margin*/
+}
+
+
+/*wszystkie elementy pomiedzy znacznikami html maja takie ustawienia jak ponizej*/
+html{
+    color: rgba(0,0,0,0.45); /*ustawianie kolor komponentow*/
+    font-family: 'Open Sans', sans-serif; /*rodzina czcionki*/
+    font-weight:300;
+    font-size:20px;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../img/background_image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.menu{
+    position: absolute; /*pozycja okreslana wzgledem przegladarki*/
+    width: 1000px; /*szerokosc komponentu*/
+    top:30%;
+    left:15%;
+    /*transform: rotate(-5deg);*/ /*obracanie komponentow*/
+}
+
+.menu-opcja:link,.menu-opcja:visited{
+    border:1px solid #dd3219;
+    color: #dd3219;
+    text-decoration: none;
+    padding: 10px;
+    margin-right:10%;
+    border-radius:200px;
+    font-weight: 700;
+    font-size:220%;
+}
+
+.menu-opcja:hover,.menu-opcja:active
+{
+    background-color: #eb634f;
+    transition: background-color 1s;
+}
+
+.row{
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 3%;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-nav li a:link, .main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 120%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:active, .main-nav li a:hover{
+    border-bottom: 2px solid #fff;
+}
